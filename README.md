@@ -5,10 +5,10 @@
 # Task 
  Create a simple Todo list with the following:
  1. The application should have lunch screen with TODO logo 
- 2. the first pages should have add button. When the user click on the add button the application should allow user to write
+ 2. The first pages should have add button. When the user click on the add button the application should allow user to write
  3. When the user click done button, the keyboard should be hidden and the add button shown in the last cell of the table 
  4. When the user click edit button, the delete button should appears to enable user delete specific cell 
- 5. When the user click trash button, all the data in the table cell will be deleted 
+ 5. When the user click trash button, it will shows alert saying that "Are you sure you want to delete all the tasks", if user click on yes, all the tasks in the table cells will be deleted 
  
 
 
