@@ -66,11 +66,29 @@ class ViewController: UIViewController, UITableViewDataSource,UITableViewDelegat
     
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let cell = taskArray[indexPath.row]
+            let alertcontroller = UIAlertController(title: "Alert"
+                                , message: "Are you sure you want to delete tasks?"
+                                , preferredStyle: UIAlertController.Style.alert
+            )
+            alertcontroller.addAction(
+              UIAlertAction(title: "cancel", style: UIAlertAction.Style.default, handler: { Action in print("...")
+              })
+            )
+            alertcontroller.addAction(
+              UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive, handler: { Action in
+
         if editingStyle == .delete {
-          taskArray.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            self.taskArray.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
         }
-        tableView.reloadData()
+                  self.tableView.reloadData()
+        })
+        )
+       
+              self.present(alertcontroller, animated: true, completion: nil)
+              
         }
     
     
