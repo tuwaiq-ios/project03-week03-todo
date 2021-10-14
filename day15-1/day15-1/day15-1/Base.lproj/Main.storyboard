@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="day15_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUf-5h-stX">
+                                <rect key="frame" x="20" y="74" width="60" height="55"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system" buttonSize="large">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                    <color key="baseForegroundColor" red="0.09290400892496109" green="0.46168273687362671" blue="0.10733539611101151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7V-zB-8UW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6W-gw-ZZv">
+                                <rect key="frame" x="95" y="82" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rBN-L9-w5M">
+                                <rect key="frame" x="0.0" y="172" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="724" id="49U-Qo-5bR"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="66" id="Rgj-YY-pPb" userLabel="taskCell" customClass="taskTabelViewcell" customModule="day15_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rgj-YY-pPb" id="Be6-gL-Rbe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-ri-MU7">
+                                                    <rect key="frame" x="12" y="18" width="56" height="37"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" buttonSize="large">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
+                                                        <color key="baseForegroundColor" red="0.09290400892496109" green="0.46168273687362671" blue="0.10733539611101151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="action:" destination="Rgj-YY-pPb" eventType="touchUpInside" id="WTu-F3-B3I"/>
+                                                        <action selector="checkButton:" destination="KsT-74-UiA" eventType="touchUpInside" id="nJs-CR-wWg"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUD-Hy-WIn">
+                                                    <rect key="frame" x="76" y="15" width="317" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="317" id="5zB-xa-aIo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5ew-ri-MU7" firstAttribute="leading" secondItem="Be6-gL-Rbe" secondAttribute="leadingMargin" constant="-8" id="Fbf-6a-uva"/>
+                                                <constraint firstItem="cUD-Hy-WIn" firstAttribute="leading" secondItem="5ew-ri-MU7" secondAttribute="trailing" constant="8" symbolic="YES" id="KMX-LZ-6f9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cUD-Hy-WIn" secondAttribute="trailing" constant="1" id="Sed-qs-Sfw"/>
+                                                <constraint firstItem="5ew-ri-MU7" firstAttribute="bottom" secondItem="Be6-gL-Rbe" secondAttribute="bottomMargin" id="fry-9S-m64"/>
+                                                <constraint firstItem="5ew-ri-MU7" firstAttribute="top" secondItem="Be6-gL-Rbe" secondAttribute="topMargin" constant="7" id="h3I-hy-pDt"/>
+                                                <constraint firstItem="cUD-Hy-WIn" firstAttribute="top" secondItem="Be6-gL-Rbe" secondAttribute="topMargin" constant="4" id="xz0-km-def"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <connections>
+                                            <outlet property="cellfield" destination="cUD-Hy-WIn" id="mbl-dm-3nl"/>
+                                            <outlet property="checkButton" destination="5ew-ri-MU7" id="fud-Bq-dck"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="rBN-L9-w5M" firstAttribute="top" secondItem="QUf-5h-stX" secondAttribute="bottom" constant="43" id="BVw-SD-iXs"/>
+                            <constraint firstAttribute="bottom" secondItem="rBN-L9-w5M" secondAttribute="bottom" id="DNw-EP-eNC"/>
+                            <constraint firstAttribute="trailing" secondItem="rBN-L9-w5M" secondAttribute="trailing" id="Pos-b0-eUX"/>
+                            <constraint firstItem="rBN-L9-w5M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mQW-L8-mdQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttenPress" destination="QUf-5h-stX" id="NkZ-Kz-UgV"/>
+                        <outlet property="tabelView" destination="rBN-L9-w5M" id="30Z-p7-hOe"/>
+                        <outlet property="taskTitle" destination="A6W-gw-ZZv" id="jgt-a1-7Y8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="KsT-74-UiA" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
