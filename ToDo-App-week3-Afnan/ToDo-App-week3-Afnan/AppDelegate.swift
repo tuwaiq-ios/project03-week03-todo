@@ -7,16 +7,35 @@
 
 import UIKit
 
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+  var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.splashscreen()
         
         UIView.appearance().semanticContentAttribute = .forceLeftToRight
         
         return true
+    }
+        private func splashscreen() {
+            let launchScreenVC = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
+            let rootVC =
+            launchScreenVC.instantiateViewController(withIdentifier: "SplashController")
+            self.window?.rootViewController = rootVC
+            self.window?.makeKeyAndVisible()
+            Timer.scheduledTimer(timeInterval: 50, target: self, selector: #selector(dismissSplashController), userInfo: nil, repeats: false)
+            
+        }
+    
+    @objc func dismissSplashController() {
+        let mainVC = UIStoryboard.init(name: "Main", bundle: nil)
+        let rootVc = mainVC.instantiateViewController(withIdentifier: "initController")
+        self.window?.rootViewController = rootVc
+        self.window?.makeKeyAndVisible()
     }
 
     // MARK: UISceneSession Lifecycle

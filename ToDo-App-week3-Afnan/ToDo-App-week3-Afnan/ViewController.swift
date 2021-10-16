@@ -16,7 +16,7 @@ struct task {
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, checkButtondelgate {
 
-    
+
     var taskArray = [task]()
     
 
@@ -66,11 +66,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            taskArray.remove(at: indexPath.row)
-            tableview.deleteRows(at: [indexPath], with: .fade)
-        }
-        tableview.reloadData()
+       
+        
+        let cell = taskArray[indexPath.row]
+        
+        let alertcontroller = UIAlertController(title: "Alert"
+                                                , message: "Are you sure you want to delete all the tasks?"
+                                                , preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alertcontroller.addAction(
+            UIAlertAction(title: "cancel", style: UIAlertAction.Style.default, handler: { Action in print("...")
+            })
+            
+        )
+        
+        alertcontroller.addAction(
+            UIAlertAction(title: "Delete", style: UIAlertAction.Style.destructive, handler: { Action in
+                if editingStyle == .delete {
+                    self.taskArray.remove(at: indexPath.row)
+                    self.tableview.deleteRows(at: [indexPath], with: .fade)
+                }
+                self.tableview.reloadData()
+            })
+            
+        )
+        
+        
+        self.present(alertcontroller, animated: true, completion: nil)
+        
     }
     
     
