@@ -10,8 +10,11 @@ import UIKit
 protocol checkButtonDeleget{
     func checkTaskTapped(at index: IndexPath)
 }
+
+
 class ToDoTableViewCell: UITableViewCell, UITextFieldDelegate {
 
+    var folder: Folder!
     var delegate: checkButtonDeleget!
     var indexPath: IndexPath!
     
@@ -21,12 +24,14 @@ class ToDoTableViewCell: UITableViewCell, UITextFieldDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         cellTextField.delegate = self
+        cellTextField.layer.borderWidth = 1.5
+        cellTextField.layer.cornerRadius = 10.0
+        cellTextField.clipsToBounds = true
         // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
@@ -35,8 +40,9 @@ class ToDoTableViewCell: UITableViewCell, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let update = Task(taskTitle: cellTextField.text, isCompleted: taskArray[indexPath.row].isCompleted)
-        taskArray[indexPath.row] = update
+//        let newTask = Task(taskTitle: cellTextField.text , isCompleted: folder.list[indexPath.row].isCompleted)
+        folder.list[indexPath.row].taskTitle = cellTextField.text
+        folder.list[indexPath.row].isCompleted = folder.list[indexPath.row].isCompleted
         textField.resignFirstResponder()
         return true
     }

@@ -7,15 +7,11 @@
 
 import UIKit
 
-struct Task{
-    var taskTitle: String?
-    var isCompleted = false
-}
-var taskArray = [Task]()
+
 
 class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, checkButtonDeleget {
     
-    
+    var folder: Folder?
     
     @IBOutlet weak var button: UIButton!
     
@@ -23,17 +19,24 @@ class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var taskTableView: UITableView!
     
+    @IBOutlet weak var folderNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        UserDefaults.standard.set(folder, forKey: "folder")
+        view.backgroundColor = folder!.color
+        folderNameLabel.text = folder!.name
         button.imageView?.contentMode = .scaleAspectFill
         taskTableView.delegate = self
         taskTableView.dataSource = self
+        taskTableView.backgroundColor = .clear
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if taskArray.count > 0{
-            return taskArray.count
+        if folder!.list.count > 0{
+            return folder!.list.count
         }else{
             return 0
         }
@@ -43,15 +46,11 @@ class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "todo", for: indexPath) as! ToDoTableViewCell
         cell.delegate = self
         cell.indexPath = indexPath
-        cell.cellTextField.text = taskArray[indexPath.row].taskTitle
-        
-        if cell.cellTextField.isEditing{
-            let updated = cell.cellTextField.text
-            let saveUpdate = Task(taskTitle: updated, isCompleted: false)
-            taskArray.insert(saveUpdate, at: indexPath.row)
-        }
-        
-        if taskArray[indexPath.row].isCompleted {
+        cell.folder = folder!
+        cell.cellTextField.text = folder!.list[indexPath.row].taskTitle
+        cell.backgroundColor = .clear
+
+        if folder!.list[indexPath.row].isCompleted {
             cell.checkButton.setImage(UIImage(named: "tick"), for: .normal)
         }else{
             cell.checkButton.setImage(UIImage(named: "empty"), for: .normal)
@@ -60,19 +59,29 @@ class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func checkTaskTapped(at index: IndexPath) {
-        if taskArray[index.row].isCompleted{
-            taskArray[index.row].isCompleted = false
+        if folder!.list[index.row].isCompleted{
+            folder!.list[index.row].isCompleted = false
         }else {
-            taskArray[index.row].isCompleted = true
+            folder!.list[index.row].isCompleted = true
         }
-        taskTableView.reloadData()
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            taskArray.remove(at: indexPath.row)
-            taskTableView.deleteRows(at: [indexPath], with: .fade)
+            let alert = UIAlertController(title: "Alert ! ", message: "are you sure you want delete this task ?", preferredStyle: .alert )
+            alert.addAction(UIAlertAction (title: "Cancel", style: .default, handler: { _ in
+                return
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Delete", style: UIAlertAction.Style.default, handler: { [self] _ in
+                        //Delete Action
+                folder!.list.remove(at: indexPath.row)
+                self.taskTableView.deleteRows(at: [indexPath], with: .fade)
+                                    }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
         }
         taskTableView.reloadData()
     }
@@ -80,12 +89,13 @@ class ToDoViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func addTaskButton(_ sender: Any) {
         if taskTitle.hasText{
             let newTask = Task(taskTitle: taskTitle.text, isCompleted: false)
-            taskArray.insert(newTask, at: 0)
+            folder!.list.insert(newTask, at: 0)
             taskTableView.reloadData()
         }
         taskTitle.text = ""
         taskTitle.resignFirstResponder()
     }
-    
+          
+        
 }
 
