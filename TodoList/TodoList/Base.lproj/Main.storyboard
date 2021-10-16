@@ -21,9 +21,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIT-J5-Tui"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnp-wv-8Jq">
                                 <rect key="frame" x="65" y="77" width="337" height="34"/>
@@ -51,11 +48,6 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="44" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="minus.circle.fill" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="action:" destination="524-nR-T4E" eventType="touchUpInside" id="vv0-iQ-bkP"/>
-                                                                <action selector="cellLabel:" destination="8Te-CH-eg0" eventType="touchUpInside" id="Gab-HE-0Bx"/>
-                                                                <action selector="checkButton:" destination="8Te-CH-eg0" eventType="touchUpInside" id="Kjy-PD-Dj5"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -63,9 +55,6 @@
                                                     <rect key="frame" x="52" y="45" width="372" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
-                                                    <connections>
-                                                        <action selector="cellfield:" destination="524-nR-T4E" eventType="editingDidEnd" id="1qX-VO-Edb"/>
-                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -79,7 +68,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cellfield" destination="owM-XV-EPQ" id="CEE-rD-kQX"/>
-                                            <outlet property="checkButton" destination="x03-MN-0Fm" id="8kS-ee-BOJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -88,15 +76,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.86507633750000001" blue="0.90448510609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="tBA-qd-TLJ" id="Ng8-nl-RZM"/>
-                        <outlet property="taskTitle" destination="xnp-wv-8Jq" id="FGv-Jl-a5k"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="8Te-CH-eg0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-426.08695652173918" y="107.8125"/>
+            <point key="canvasLocation" x="-196" y="146"/>
         </scene>
     </scenes>
     <resources>

@@ -6,11 +6,12 @@
 //
 
 import UIKit
+
 struct Task {
     var taskTitle:String?
     var isCompleted = false
 }
-var taskArray = [Task]()
+var taskArray = [Task] ()
 
 
 
@@ -21,12 +22,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     @IBOutlet weak var taskTitle: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
-        // Do any additional setup after loading the view.
-    }
+   
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,10 +80,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             let newTask = Task(taskTitle: taskTitle.text, isCompleted: false)
             taskArray.insert(newTask, at: 0)
             tableView.reloadData()
+            taskTitle.text = ""
         }
-        taskTitle.resignFirstResponder()
+        
+        
+        func viewDidLoad() {
+            super.viewDidLoad()
+            tableView.dataSource = self
+            tableView.delegate = self
+            // Do any additional setup after loading the view.
+        }
+        
+        
+        
+        
+    }
         
     }
     
-}
+
 
