@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var buttonPressed: UIButton!
     
+   
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if taskArray.count > 0 {
             return taskArray.count
@@ -40,12 +41,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         if taskArray[indexPath.row].isCompleted {
             cell.checkButton.setImage(
-                UIImage(systemName: "ch1"),
+                UIImage(named: "ch2"),
                 for: .normal
                 )
         }else{
             cell.checkButton.setImage(
-                UIImage(systemName: "ch2"),
+                UIImage(named: "ch1"),
                 for: .normal
             )
         }
@@ -82,6 +83,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after
