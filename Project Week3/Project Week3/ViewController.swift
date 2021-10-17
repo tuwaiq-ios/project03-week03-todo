@@ -8,11 +8,18 @@
 
 import UIKit
 
+
+struct Task {
+    var taskTitle: String?
+    var isChecked = false
+}
+var taskArray = [Task] ()
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var Taskbox: UITableView!
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +51,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         present(Alert, animated: true, completion: nil)
     }
-    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deletAction = UIContextualAction(style: .destructive, title: "DELET",handler: {
+          (ac:UIContextualAction,view:UIView,success:(Bool)->Void)in
+          taskArray.remove(at: indexPath.row)
+          tableView.deleteRows(at: [indexPath], with: .left)
+          success(true)
+        } )
+        return UISwipeActionsConfiguration(actions: [deletAction])
+          //
+        }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -74,10 +90,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.imagecheck.image = nil
                 cell.isChecked = false
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    
+                
+        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+                  var taskArray = [Task] ()
         
-        if editingStyle == .delete {
-            taskArray.remove(at: indexPath.row)
+        if editingStyle == .delete { taskArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             Taskbox.reloadData()
             

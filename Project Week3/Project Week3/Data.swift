@@ -6,10 +6,3 @@
 //
 
 import UIKit
-
-
-struct Task {
-    var taskTitle: String?
-    var isChecked = false
-}
-var taskArray = [Task] ()
