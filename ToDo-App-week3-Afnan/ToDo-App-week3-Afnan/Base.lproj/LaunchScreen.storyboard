@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController storyboardIdentifier="SplashController" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="35fab537-fd1a-4782-9fa9-92ceac8fc887" translatesAutoresizingMaskIntoConstraints="NO" id="xjq-06-zz6">
+                                <rect key="frame" x="20" y="256" width="374" height="334"/>
+                                <color key="backgroundColor" red="0.90196073060000004" green="0.79607844350000001" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made With Love ♥️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPX-JX-1QP">
+                                <rect key="frame" x="59" y="787" width="291" height="31"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90196073060000004" green="0.79607844350000001" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xjq-06-zz6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Htw-hD-Xm8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OPX-JX-1QP" secondAttribute="bottom" constant="44" id="LmZ-57-FLp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OPX-JX-1QP" secondAttribute="trailing" constant="64" id="c5A-Y0-fJI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xjq-06-zz6" secondAttribute="trailing" constant="20" id="eho-kD-UQN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xjq-06-zz6" secondAttribute="bottom" constant="272" id="kIB-X7-IDN"/>
+                            <constraint firstItem="xjq-06-zz6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="tA7-BW-diC"/>
+                            <constraint firstItem="OPX-JX-1QP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="wTu-YF-h66"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="35fab537-fd1a-4782-9fa9-92ceac8fc887" width="770" height="450"/>
+    </resources>
+</document>
