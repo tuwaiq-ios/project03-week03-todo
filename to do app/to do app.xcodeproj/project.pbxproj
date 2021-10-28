@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBCE4DCD271729E2001EB8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE4DCC271729E2001EB8BD /* AppDelegate.swift */; };
-		DBCE4DCF271729E2001EB8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE4DCE271729E2001EB8BD /* SceneDelegate.swift */; };
-		DBCE4DD1271729E2001EB8BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE4DD0271729E2001EB8BD /* ViewController.swift */; };
-		DBCE4DD4271729E2001EB8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCE4DD2271729E2001EB8BD /* Main.storyboard */; };
-		DBCE4DD6271729E3001EB8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBCE4DD5271729E3001EB8BD /* Assets.xcassets */; };
-		DBCE4DD9271729E3001EB8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCE4DD7271729E3001EB8BD /* LaunchScreen.storyboard */; };
-		DBCE4DE127172C48001EB8BD /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE4DE027172C48001EB8BD /* cell.swift */; };
+		DB84019A27293306002B05D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84019927293306002B05D6 /* AppDelegate.swift */; };
+		DB84019C27293306002B05D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84019B27293306002B05D6 /* SceneDelegate.swift */; };
+		DB84019E27293306002B05D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB84019D27293306002B05D6 /* ViewController.swift */; };
+		DB8401A127293306002B05D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB84019F27293306002B05D6 /* Main.storyboard */; };
+		DB8401A327293308002B05D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8401A227293308002B05D6 /* Assets.xcassets */; };
+		DB8401A627293308002B05D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8401A427293308002B05D6 /* LaunchScreen.storyboard */; };
+		DB8401AE2729336B002B05D6 /* tableViewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8401AD2729336B002B05D6 /* tableViewcell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DBCE4DC9271729E2001EB8BD /* day 14 (2).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "day 14 (2).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBCE4DCC271729E2001EB8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBCE4DCE271729E2001EB8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBCE4DD0271729E2001EB8BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBCE4DD3271729E2001EB8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DBCE4DD5271729E3001EB8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBCE4DD8271729E3001EB8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DBCE4DDA271729E3001EB8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBCE4DE027172C48001EB8BD /* cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		DB84019627293306002B05D6 /* to do app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "to do app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB84019927293306002B05D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB84019B27293306002B05D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB84019D27293306002B05D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB8401A027293306002B05D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB8401A227293308002B05D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB8401A527293308002B05D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB8401A727293308002B05D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8401AD2729336B002B05D6 /* tableViewcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewcell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DBCE4DC6271729E2001EB8BD /* Frameworks */ = {
+		DB84019327293306002B05D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBCE4DC0271729E2001EB8BD = {
+		DB84018D27293306002B05D6 = {
 			isa = PBXGroup;
 			children = (
-				DBCE4DCB271729E2001EB8BD /* day 14 (2) */,
-				DBCE4DCA271729E2001EB8BD /* Products */,
+				DB84019827293306002B05D6 /* to do app */,
+				DB84019727293306002B05D6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DBCE4DCA271729E2001EB8BD /* Products */ = {
+		DB84019727293306002B05D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBCE4DC9271729E2001EB8BD /* day 14 (2).app */,
+				DB84019627293306002B05D6 /* to do app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DBCE4DCB271729E2001EB8BD /* day 14 (2) */ = {
+		DB84019827293306002B05D6 /* to do app */ = {
 			isa = PBXGroup;
 			children = (
-				DBCE4DCC271729E2001EB8BD /* AppDelegate.swift */,
-				DBCE4DCE271729E2001EB8BD /* SceneDelegate.swift */,
-				DBCE4DD0271729E2001EB8BD /* ViewController.swift */,
-				DBCE4DE027172C48001EB8BD /* cell.swift */,
-				DBCE4DD2271729E2001EB8BD /* Main.storyboard */,
-				DBCE4DD5271729E3001EB8BD /* Assets.xcassets */,
-				DBCE4DD7271729E3001EB8BD /* LaunchScreen.storyboard */,
-				DBCE4DDA271729E3001EB8BD /* Info.plist */,
+				DB84019927293306002B05D6 /* AppDelegate.swift */,
+				DB84019B27293306002B05D6 /* SceneDelegate.swift */,
+				DB84019D27293306002B05D6 /* ViewController.swift */,
+				DB84019F27293306002B05D6 /* Main.storyboard */,
+				DB8401A227293308002B05D6 /* Assets.xcassets */,
+				DB8401A427293308002B05D6 /* LaunchScreen.storyboard */,
+				DB8401A727293308002B05D6 /* Info.plist */,
+				DB8401AD2729336B002B05D6 /* tableViewcell.swift */,
 			);
-			path = "day 14 (2)";
+			path = "to do app";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBCE4DC8271729E2001EB8BD /* day 14 (2) */ = {
+		DB84019527293306002B05D6 /* to do app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBCE4DDD271729E3001EB8BD /* Build configuration list for PBXNativeTarget "day 14 (2)" */;
+			buildConfigurationList = DB8401AA27293308002B05D6 /* Build configuration list for PBXNativeTarget "to do app" */;
 			buildPhases = (
-				DBCE4DC5271729E2001EB8BD /* Sources */,
-				DBCE4DC6271729E2001EB8BD /* Frameworks */,
-				DBCE4DC7271729E2001EB8BD /* Resources */,
+				DB84019227293306002B05D6 /* Sources */,
+				DB84019327293306002B05D6 /* Frameworks */,
+				DB84019427293306002B05D6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "day 14 (2)";
-			productName = "day 14 (2)";
-			productReference = DBCE4DC9271729E2001EB8BD /* day 14 (2).app */;
+			name = "to do app";
+			productName = "to do app";
+			productReference = DB84019627293306002B05D6 /* to do app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DBCE4DC1271729E2001EB8BD /* Project object */ = {
+		DB84018E27293306002B05D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					DBCE4DC8271729E2001EB8BD = {
+					DB84019527293306002B05D6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = DBCE4DC4271729E2001EB8BD /* Build configuration list for PBXProject "day 14 (2)" */;
+			buildConfigurationList = DB84019127293306002B05D6 /* Build configuration list for PBXProject "to do app" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = DBCE4DC0271729E2001EB8BD;
-			productRefGroup = DBCE4DCA271729E2001EB8BD /* Products */;
+			mainGroup = DB84018D27293306002B05D6;
+			productRefGroup = DB84019727293306002B05D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBCE4DC8271729E2001EB8BD /* day 14 (2) */,
+				DB84019527293306002B05D6 /* to do app */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DBCE4DC7271729E2001EB8BD /* Resources */ = {
+		DB84019427293306002B05D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCE4DD9271729E3001EB8BD /* LaunchScreen.storyboard in Resources */,
-				DBCE4DD6271729E3001EB8BD /* Assets.xcassets in Resources */,
-				DBCE4DD4271729E2001EB8BD /* Main.storyboard in Resources */,
+				DB8401A627293308002B05D6 /* LaunchScreen.storyboard in Resources */,
+				DB8401A327293308002B05D6 /* Assets.xcassets in Resources */,
+				DB8401A127293306002B05D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DBCE4DC5271729E2001EB8BD /* Sources */ = {
+		DB84019227293306002B05D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCE4DD1271729E2001EB8BD /* ViewController.swift in Sources */,
-				DBCE4DE127172C48001EB8BD /* cell.swift in Sources */,
-				DBCE4DCD271729E2001EB8BD /* AppDelegate.swift in Sources */,
-				DBCE4DCF271729E2001EB8BD /* SceneDelegate.swift in Sources */,
+				DB84019E27293306002B05D6 /* ViewController.swift in Sources */,
+				DB8401AE2729336B002B05D6 /* tableViewcell.swift in Sources */,
+				DB84019A27293306002B05D6 /* AppDelegate.swift in Sources */,
+				DB84019C27293306002B05D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBCE4DD2271729E2001EB8BD /* Main.storyboard */ = {
+		DB84019F27293306002B05D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DBCE4DD3271729E2001EB8BD /* Base */,
+				DB8401A027293306002B05D6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DBCE4DD7271729E3001EB8BD /* LaunchScreen.storyboard */ = {
+		DB8401A427293308002B05D6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DBCE4DD8271729E3001EB8BD /* Base */,
+				DB8401A527293308002B05D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DBCE4DDB271729E3001EB8BD /* Debug */ = {
+		DB8401A827293308002B05D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		DBCE4DDC271729E3001EB8BD /* Release */ = {
+		DB8401A927293308002B05D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,7 +286,7 @@
 			};
 			name = Release;
 		};
-		DBCE4DDE271729E3001EB8BD /* Debug */ = {
+		DB8401AB27293308002B05D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,7 +295,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DZVBLG3322;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "day 14 (2)/Info.plist";
+				INFOPLIST_FILE = "to do app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +306,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alanood.com.day-14--2-";
+				PRODUCT_BUNDLE_IDENTIFIER = "alanood.com.to-do-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,7 +314,7 @@
 			};
 			name = Debug;
 		};
-		DBCE4DDF271729E3001EB8BD /* Release */ = {
+		DB8401AC27293308002B05D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DZVBLG3322;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "day 14 (2)/Info.plist";
+				INFOPLIST_FILE = "to do app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +334,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alanood.com.day-14--2-";
+				PRODUCT_BUNDLE_IDENTIFIER = "alanood.com.to-do-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -345,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBCE4DC4271729E2001EB8BD /* Build configuration list for PBXProject "day 14 (2)" */ = {
+		DB84019127293306002B05D6 /* Build configuration list for PBXProject "to do app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBCE4DDB271729E3001EB8BD /* Debug */,
-				DBCE4DDC271729E3001EB8BD /* Release */,
+				DB8401A827293308002B05D6 /* Debug */,
+				DB8401A927293308002B05D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBCE4DDD271729E3001EB8BD /* Build configuration list for PBXNativeTarget "day 14 (2)" */ = {
+		DB8401AA27293308002B05D6 /* Build configuration list for PBXNativeTarget "to do app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBCE4DDE271729E3001EB8BD /* Debug */,
-				DBCE4DDF271729E3001EB8BD /* Release */,
+				DB8401AB27293308002B05D6 /* Debug */,
+				DB8401AC27293308002B05D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DBCE4DC1271729E2001EB8BD /* Project object */;
+	rootObject = DB84018E27293306002B05D6 /* Project object */;
 }
